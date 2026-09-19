@@ -582,4 +582,10 @@
 
 @media (max-width: 900px) {
   .heroTitle {
-    font-siz
+    font-size: 3.5rem;
+  }
+  .storyGrid, .yellowGrid, .reportGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
