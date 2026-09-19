@@ -1,0 +1,585 @@
+.landingWrapper {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+.topNotice {
+  background-color: #1C1917;
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.noticeBtn {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  padding: 5rem 1.5rem 6rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.heroSubHeader {
+  font-size: 0.813rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  letter-spacing: -0.04em;
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 780px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+.heroCtas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.primaryCta {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 1.125rem 2.25rem;
+  border-radius: 10px;
+  font-size: 1.063rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(242, 44, 49, 0.3);
+}
+
+.primaryCta:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.secondaryCta {
+  background-color: #1C1917;
+  color: #ffffff;
+  padding: 1.125rem 2.25rem;
+  border-radius: 10px;
+  font-size: 1.063rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.secondaryCta:hover {
+  background-color: #332F2C;
+  transform: translateY(-2px);
+}
+
+.heroImageContainer {
+  margin-top: 3.5rem;
+  width: 100vw;
+  max-width: 1540px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 1540px;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heroImage:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Story Section */
+.storySection {
+  background-color: var(--bg-editorial-warm);
+  padding: 6rem 1.5rem;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.storyTitle {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+}
+
+.emblemIcon {
+  margin-bottom: 1.5rem;
+}
+
+.storyText {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.pillBadges {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pill {
+  font-size: 0.938rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.diagramCard {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+}
+
+.diagramHeader {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 1rem;
+}
+
+.diagramHeader h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.diagramHeader p {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.nodeGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nodeItem {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nodeItem:hover, .activeNode {
+  border-color: var(--primary);
+  background-color: var(--primary-container);
+}
+
+.nodeBadge {
+  width: 36px;
+  height: 36px;
+  background-color: #1C1917;
+  color: #ffffff;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.nodeItem h4 {
+  font-size: 1.063rem;
+  margin-bottom: 0.25rem;
+}
+
+.nodeItem p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* Yellow Highlight Section */
+.yellowBanner {
+  background-color: var(--bg-editorial-yellow);
+  padding: 6rem 1.5rem;
+  color: #1C1917;
+}
+
+.yellowGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.kicker {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.yellowTitle {
+  font-size: 3.25rem;
+  line-height: 1.1;
+  margin: 1rem 0 1.5rem;
+}
+
+.yellowSub {
+  font-size: 1.125rem;
+  color: #44403C;
+}
+
+.yellowRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.featureBox {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.featureIcon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.featureBox h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.featureBox p {
+  font-size: 0.938rem;
+  color: var(--text-muted);
+}
+
+/* Safety Section */
+.safetySection {
+  padding: 6rem 1.5rem;
+  background-color: var(--bg-main);
+}
+
+.safetyHeader {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.safetyTag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--primary);
+}
+
+.safetyHeader h2 {
+  font-size: 2.75rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.triageCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.triageCard {
+  background: #ffffff;
+  padding: 2.25rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+}
+
+.cardHeaderUrgent span {
+  background-color: var(--status-urgent-bg);
+  color: var(--status-urgent-text);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 800;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+}
+
+.cardHeaderPriority span {
+  background-color: var(--status-priority-bg);
+  color: var(--status-priority-text);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 800;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+}
+
+.cardHeaderRoutine span {
+  background-color: var(--status-routine-bg);
+  color: var(--status-routine-text);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 800;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+}
+
+.triageCard h3 {
+  font-size: 1.5rem;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.triageCard p {
+  font-size: 0.938rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.actionOutcome {
+  background-color: var(--bg-main);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--text-main);
+  border-left: 3px solid var(--text-main);
+}
+
+/* Report Section */
+.reportSection {
+  background-color: var(--bg-editorial-warm);
+  padding: 6rem 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.reportGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.reportText h2 {
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.reportText p {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.reportFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.rfItem {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.reportBtn {
+  background-color: #1C1917;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.pdfCard {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+}
+
+.pdfHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pdfLogo {
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 1.125rem;
+}
+
+.pdfDate {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.pdfBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pdfRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.938rem;
+  border-bottom: 1px dashed var(--border-light);
+  padding-bottom: 0.5rem;
+}
+
+.statusNormal {
+  color: #065F46;
+}
+
+.pdfDisclaimer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  background-color: #1C1917;
+  color: #ffffff;
+  padding: 6rem 1.5rem 3rem;
+}
+
+.footerCTA {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 5rem;
+}
+
+.footerCTA h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.footerCTA p {
+  color: #A8A29E;
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.footerBtns {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.whatsappBtnLarge {
+  background-color: #25D366;
+  color: #ffffff;
+  padding: 1.125rem 2.25rem;
+  border-radius: var(--radius-full);
+  font-size: 1.063rem;
+  font-weight: 800;
+}
+
+.portalBtnLarge {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #57534E;
+  padding: 1.125rem 2.25rem;
+  border-radius: var(--radius-full);
+  font-size: 1.063rem;
+  font-weight: 700;
+}
+
+.footerBottom {
+  border-top: 1px solid #292524;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footerLegal p {
+  color: #78716C;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.disclaimerText {
+  font-size: 0.75rem !important;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .heroTitle {
+    font-siz

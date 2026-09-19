@@ -1,0 +1,259 @@
+.loginWrapper {
+  min-height: 100vh;
+  background-color: #F9F9F9;
+  color: #0F172A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  font-family: var(--font-sans);
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.topBar {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.backBtn {
+  background: #ffffff;
+  color: #475569;
+  font-size: 0.813rem;
+  font-weight: 600;
+  border: 1px solid #CBD5E1;
+  padding: 0.45rem 0.875rem;
+  border-radius: var(--radius-full);
+}
+
+.backBtn:hover {
+  background: #F1F5F9;
+  color: #0F172A;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.stepBadge {
+  background: #E2E8F0;
+  color: #64748B;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+.stepActive {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.stepDone {
+  background: #10B981;
+  color: #ffffff;
+}
+
+.stepDivider {
+  color: #94A3B8;
+}
+
+.loginCard {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.cardHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logoBadge {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.cardHeader h1 {
+  font-size: 1.625rem;
+  color: #0F172A;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+.cardHeader p {
+  font-size: 0.875rem;
+  color: #64748B;
+  line-height: 1.5;
+}
+
+.errorAlert {
+  background: #FEF2F2;
+  color: #991B1B;
+  border: 1px solid #FCA5A5;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fieldGroup label {
+  font-size: 0.813rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.input, .select {
+  background: #FAFAFA;
+  border: 1px solid #CBD5E1;
+  color: #0F172A;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.938rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input:focus, .select:focus {
+  border-color: var(--primary);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(242, 44, 49, 0.15);
+}
+
+.securityBanner {
+  background: #ECFDF5;
+  border-left: 3px solid #10B981;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  color: #065F46;
+  border-radius: 4px;
+}
+
+.submitBtn {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 0.875rem;
+  border-radius: var(--radius-md);
+  font-size: 0.938rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.submitBtn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.btnRow {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.backStepBtn {
+  background: #F1F5F9;
+  color: #334155;
+  border: 1px solid #CBD5E1;
+  padding: 0.875rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.submitBtnFlex {
+  flex: 1;
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 0.875rem;
+  border-radius: var(--radius-md);
+  font-size: 0.938rem;
+  font-weight: 700;
+}
+
+.submitBtnFlex:hover {
+  background-color: var(--primary-hover);
+}
+
+.demoBox {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #E2E8F0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.demoBox span {
+  font-size: 0.75rem;
+  color: #64748B;
+}
+
+.demoBtnGroup {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.demoBtn {
+  background: #F0F9FF;
+  color: #0284C7;
+  border: 1px solid #BAE6FD;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-size: 0.813rem;
+  font-weight: 700;
+}
+
+.demoBtn:hover {
+  background: #0284C7;
+  color: #ffffff;
+}
+
+.adminDemoBtn {
+  background: #1C1917;
+  color: #F4E89B;
+  border: 1px solid #44403C;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-size: 0.813rem;
+  font-weight: 700;
+}
+
+.adminDemoBtn:hover {
+  background: #292524;
+  color: #ffffff;
+}

@@ -1,0 +1,179 @@
+.simulatorOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(6px);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.phoneFrame {
+  width: 100%;
+  max-width: 420px;
+  height: 720px;
+  background-color: #E5DDD5; /* Classic WhatsApp Chat BG */
+  border-radius: 36px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 8px solid #1F2937;
+}
+
+.waHeader {
+  background-color: #075E54;
+  color: #ffffff;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.waProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.waAvatar {
+  width: 38px;
+  height: 38px;
+  background-color: var(--primary);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.waName {
+  font-weight: 700;
+  font-size: 0.938rem;
+}
+
+.waStatus {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.closePhone {
+  background: transparent;
+  color: #ffffff;
+  font-size: 1.25rem;
+  border: none;
+}
+
+.waBody {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.securityNotice {
+  background: #FFF9C4;
+  color: #5D4037;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+}
+
+.bubble {
+  max-width: 85%;
+  padding: 0.75rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+
+}
+
+.bot {
+  background: #ffffff;
+  color: #000000;
+  align-self: flex-start;
+  border-top-left-radius: 0;
+}
+
+.user {
+  background: #DCF8C6;
+  color: #000000;
+  align-self: flex-end;
+  border-top-right-radius: 0;
+}
+
+.bubbleText {
+  white-space: pre-wrap;
+}
+
+.bubbleTime {
+  font-size: 0.65rem;
+  color: #78716C;
+  text-align: right;
+  margin-top: 0.25rem;
+}
+
+.quickBar {
+  background: #F0F0F0;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.35rem;
+  overflow-x: auto;
+  border-top: 1px solid #E0E0E0;
+}
+
+.quickBar button {
+  background: #ffffff;
+  border: 1px solid #CCCCCC;
+  padding: 0.35rem 0.65rem;
+  border-radius: 14px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #000000;
+}
+
+.quickBar button:hover {
+  background: #075E54;
+  color: #ffffff;
+  border-color: #075E54;
+}
+
+.waFooter {
+  background: #F0F0F0;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.waInput {
+  flex: 1;
+  background: #ffffff;
+  border: none;
+  padding: 0.6rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.sendBtn {
+  background: #075E54;
+  color: #ffffff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
